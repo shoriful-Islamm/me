@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoriful Islam</title>
+    <style>
+        body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-header h1 {
+    margin: 10px 0;
+}
+
+.profile-header p {
+    color: #6c757d;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.rounded-lg {
+    border-radius: 0.3rem;
+}
+
+.profile-content {
+    margin-top: 30px;
+}
+
+.profile-content h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.profile-content p {
+    line-height: 1.6;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.skill {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h5 {
+    margin-top: 0;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 0 0 32%;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="https://scontent.fdac24-4.fna.fbcdn.net/v/t39.30808-1/428616005_1140720790251531_2518876568305887432_n.jpg?stp=dst-jpg_s200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEQmEIyOOmFavMOjmjHAXttYq9dPs5a35hir10-zlrfmIb3YDPpiVQQBrAawl05-URX3ki9q6UBbz4z9xdFyjLr&_nc_ohc=__cOVsJkpxIQ7kNvgEGwnXv&_nc_ht=scontent.fdac24-4.fna&oh=00_AYCofgqKrSeQv-n-yaTe1Uw86Gv_uEH7UKOOhGvOBVsgHQ&oe=666A4391" alt="Profile Picture">
+            <h1>Shoriful Islam</h1>
+            <p>Laravel Developer with 2 Years of Experience</p>
+        </div>
+        <marquee width="100%" direction="left" class="bg-dark text-white rounded-lg" scrollamount="10" style="height: 50px; display: flex; align-items: center; justify-content: center;">
+            ওয়েবসাইট নির্মাণ চলছে। শীঘ্রই একটি সুন্দর ওয়েবসাইট আসছে।
+        </marquee>
+        
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- About Me Section -->
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Passionate Laravel developer with 2 years of experience in building web applications. 
+                    Skilled in PHP, JavaScript, and MySQL, and familiar with modern front-end technologies. 
+                    Enjoy solving complex problems and delivering high-quality code.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <h4>Laravel</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>PHP</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>MySQL</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>HTML & CSS</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Version Control (Git)</h4>
+                        <div class="progress-bar">
+                            <div class="skill" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul class="experience-list">
+                    <li class="experience-item">
+                        <h5>Laravel Developer at XYZ Company</h5>
+                        <p>June 2022 - Present</p>
+                        <ul>
+                            <li>Developed and maintained web applications using Laravel framework.</li>
+                            <li>Collaborated with front-end developers to integrate user-facing elements.</li>
+                            <li>Worked with RESTful APIs and managed database operations.</li>
+                        </ul>
+                    </li>
+                    <li class="experience-item">
+                        <h5>Junior Developer at ABC Solutions</h5>
+                        <p>January 2021 - May 2022</p>
+                        <ul>
+                            <li>Assisted in the development of PHP-based applications.</li>
+                            <li>Participated in code reviews and team meetings.</li>
+                            <li>Provided support for front-end development using JavaScript and jQuery.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-item">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x150" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Description of the project.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x150" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Description of the project.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x150" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Description of the project.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile-header h1 {
+            margin: 10px 0;
+        }
+
+        .profile-header p {
+            color: #6c757d;
+        }
+
+        .bg-dark {
+            background-color: #343a40 !important;
+        }
+
+        .text-white {
+            color: #fff !important;
+        }
+
+        .rounded-lg {
+            border-radius: 0.3rem;
+        }
+
+        .profile-content {
+            margin-top: 30px;
+        }
+
+        .profile-content h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .profile-content p {
+            line-height: 1.6;
+        }
+
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill-item {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background-color: #e9ecef;
+            border-radius: 0.3rem;
+            overflow: hidden;
+        }
+
+        .skill {
+            background-color: #007bff;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .experience-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience-item {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 0.3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h5 {
+            margin-top: 0;
+        }
+
+        .experience-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            flex: 0 0 32%;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 0.3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.3rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>
