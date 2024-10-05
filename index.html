@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>CV Resume</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="CV Resume" name="keywords">
-        <meta content="CV Resume" name="description">
-        <link href="img/favicon.ico" rel="icon">
 
+<head>
+    <met#aeb3b8et="utf-8">
+        <title>Home</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Home" name="keywords">
+        <meta content="Home" name="description">
+        <link href="img/favicon.ico" rel="icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,460 +18,679 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-    </head>
+        <style>
+            .position-relative {
+                position: relative;
+            }
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+            .project-title {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px 10px;
+                font-size: 1.2em;
+                border-radius: 5px;
+            }
+
+            .portfolio-image {
+                position: relative;
+                transition: all 0.3s ease-in-out;
+            }
+        
+            .portfolio-image img {
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            .portfolio-image:hover img {
+                transform: scale(1.1);
+            }
+        
+            .portfolio-image .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
+                /* opacity: 0; */
+                transition: opacity 0.3s ease-in-out;
+            }
+        
+            .portfolio-image:hover .overlay {
+                opacity: 1;
+            }
+        
+            .btn-outline-light {
+                border: 1px solid #fff;
+                color: #fff;
+            }
+        
+            .btn-outline-light:hover {
+                background: #fff;
+                color: #000;
+            }
+            .card {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+        </style>
+</head>
+
+<body>
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
 
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/shoriful.png" alt="Image">
-                        <h1 class="text-primary mt-2">Shoriful Islam</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Software Engineer, Web Developer, PHP-Laravel Developer</div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="" class="btn w-50 border-end">Download CV</a>
-                            <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
-                        </div>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 sticky-lg-top vh-100">
+                <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+                    <img class="w-100 img-fluid mb-4" src="img/shoriful.png" alt="Image">
+                    <h1 class="text-primary mt-2">Shoriful Islam</h1>
+                    <div class="mb-4" style="height: 22px;">
+                        <h4 class="typed-text-output d-inline-block text-light"></h4>
+                        <div class="typed-text d-none">Software Engineer, Web Developer, PHP-Laravel Developer</div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-auto mb-3">
+                        <a class="btn btn-secondary btn-square mx-1" href="https://github.com/shoriful-Islamm" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/shoriful-islam-66b9211a7" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between border-top">
+                        <a href="img/curriculum vitae.pdf" class="btn w-50 border-end" target="_blank">Download CV</a>
+                        <a href="#portfolio" class="btn w-50 btn-scroll">Portfolio</a>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>Diam rebum sea stet rebum ea. Et kasd amet et accusam elitr voluptua. Tempor dolore sit et accusam ipsum erat duo. Gubergren et takimata dolor duo amet et sanctus elitr lorem. Ipsum amet duo rebum dolor labore. No diam duo lorem elitr dolor takimata elitr no. Magna et gubergren duo ipsum sed, amet ea voluptua dolores voluptua dolor ipsum et. Sit takimata erat consetetur invidunt lorem consetetur. Lorem magna diam vero nonumy. Aliquyam diam voluptua magna et magna nonumy. Accusam rebum clita et sit vero lorem, voluptua amet sit eos no et labore vero, et consetetur justo et et sit aliquyam labore, sit erat lorem justo dolores kasd est sit. Dolor et accusam ea et dolor sit.</p>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Md. Shoriful Islam
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Birthday:</span> 28 June 1998
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Education:</span> BS.c in CSE
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 18.10.2022 - OnGoing
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Phone:</span> 0178XXXXXXX
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> Shoriful.swe@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> Mirpur-06, Dhaka, Bangladesh
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Freelance:</span> Not Available
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Happy</p>
-                                        <h5 class="mb-0">Clients</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete</p>
-                                        <h5 class="mb-0">Projects</h5>
-                                    </div>
+            </div>
+            <div class="col-lg-8">
+                <!-- About Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">About Me</h1>
+                    <p> I am a dedicated full stack web developer with more then 2 years of hands-on experience in
+                        software development. My expertise spans across server-side and client-side technologies, with a
+                        strong foundation in object-oriented programming, data structures, and algorithms. I am
+                        proficient in Laravel framework, PHP, SQL, MySql, JavaScript(ES6+), ReactJs, jQuery, Bootstrap,
+                        CSS3,
+                        HTML5, API integration, Git & GitHub. I thrive in Agile environments, where I have not only
+                        developed
+                        complex applications but also led teams of 3 to 5 members to successful project completions.
+                        <br> <br>
+
+                        Programming is not just my career—it's my passion. I have a deep love for solving complex
+                        problems and continuously learning new technologies. I am always excited by new challenges and
+                        opportunities that push me to grow as a developer and leader.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex bg-secondary p-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0">Years of</p>
+                                    <h5 class="mb-0">Experience</h5>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- About End -->
-
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">HTML</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">CSS</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Bootstrap</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Javascript</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">jQuery</p>
-                                        <p class="mb-2">70%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">PHP</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Laravel</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">MySql</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">ReactJs</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Git & GitHub</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex bg-secondary p-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0">Happy</p>
+                                    <h5 class="mb-0">Clients</h5>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Skills End -->
-
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Expericence</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Web Designer</h5>
-                                <p class="mb-2">Soft Company | <small>2000 - 2050</small></p>
-                                <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Web Designer</h5>
-                                <p class="mb-2">Soft Company | <small>2000 - 2050</small></p>
-                                <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Web Designer</h5>
-                                <p class="mb-2">Soft Company | <small>2000 - 2050</small></p>
-                                <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Expericence End -->
-
-                    <!-- Subscribe Start -->
-                    <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Subscribe End -->
-
-                    <!-- Services Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Web Design</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Apps Development</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2">SEO</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Content Creating</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex bg-secondary p-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0">Complete</p>
+                                    <h5 class="mb-0">Projects</h5>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Services End -->
+                    </div>
+                </section>
 
-                    <!-- Portfolio Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Portfolio</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Design</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Development</li>
-                                        </ul>
-                                    </div>
+                <!-- Skills Start -->
+                <section class="py-4 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Skills</h1>
+                    <div class="row">
+                        <div class="col-12 text-center mb-2">
+                            <ul class="list-inline mb-4">
+                                <li class="btn btn-secondary">Laravel</li>
+                                <li class="btn btn-secondary">PHP</li>
+                                <li class="btn btn-secondary">OOP</li>
+                                <li class="btn btn-secondary">MySql</li>
+                                <li class="btn btn-secondary">JavaScript</li>
+                                <li class="btn btn-secondary">ReactJs</li>
+                                <li class="btn btn-secondary">jQuery</li>
+                                <li class="btn btn-secondary">Bootstrap</li>
+                                <li class="btn btn-secondary">CSS3</li>
+                                <li class="btn btn-secondary">HTML5</li>
+                                <li class="btn btn-secondary">Rest APIs</li>
+                                <li class="btn btn-secondary">Data Structures</li>
+                                <li class="btn btn-secondary">Algorithms</li>
+                                <li class="btn btn-secondary">Git & GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Skills End -->
+                
+                <!-- Start Resume Section -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <h1 class="title pb-3 mb-5">Portfolio</h1> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 text-center mb-2">
+                                    <!-- Renamed ID to avoid conflict -->
+                                    <ul class="list-inline mb-4" id="resume-filters">
+                                        <li class="btn btn-secondary active" data-target=".education" onclick="filterItems(event, 'education', 'resume')"><i class="fas fa-user-graduate"></i> Education</li>
+                                        <li class="btn btn-secondary" data-target=".experience" onclick="filterItems(event, 'experience', 'resume')"><i class="fa fa-laptop-code me-2"></i> Experience</li>
+                                        <li class="btn btn-secondary" data-target=".contact" onclick="filterItems(event, 'contact', 'resume')"> <i class="fas fa-address-book"></i> Contact</li>
+                                    </ul>
                                 </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
+                            </div>
+                            <div class="row resume-container"> 
+                                <div class="col-md-10 mb-4 resume-item education">
+                                    <div class="border-start border-2 border-light pt-2 ps-5">
+                                        <!-- Education Item -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Bachelor of Science in Computer Science & Engineering</h5>
+                                            <p class="mb-2">Daffodil International University | <small>2016 - 2020</small></p>
+                                            <p>GPA- 3.41 out of 4</p>
+                                        </div>
+                                        <!-- Higher Secondary Item -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Higher Secondary School Certificate</h5>
+                                            <p class="mb-2">College of Finance & Management | <small>2014 - 2016</small></p>
+                                            <p>GPA- 4.00 out of 5</p>
+                                        </div>
+                                        <!-- Secondary School Item -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Secondary School Certificate</h5>
+                                            <p class="mb-2">Baghutia Omar Ali High School | <small>2009 - 2014</small></p>
+                                            <p>GPA- 4.19 out of 5</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
+                                </div>
+
+                                <div class="col-md-10 mb-4 resume-item experience d-none">
+                                    <div class="border-start border-2 border-light pt-2 ps-5">
+                                        <!-- Experience Item -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Software Engineer</h5>
+                                            <p class="mb-2"><em>IT Sheba Limited, Dhaka, Bangladesh</em> <br><small>September 2022 – Present</small></p>
+                                        </div>
+                                        <!-- Job Responsibilities -->
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Collaborating with the business stakeholders to capture requirements and deliver as per the specifications.</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Worked on full-stack development using Laravel framework, JavaScript, Blade templates, and others.</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Collaborated with senior developers to design and develop robust and scalable web applications using Laravel framework.</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Improved database performance by optimizing SQL queries and schema design.</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Participated in daily stand-up meetings, contributing insights and ideas to enhance project efficiency and functionality.</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <p>Implemented software enhancements and updates based on client feedback and changing market demands.</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
+                                </div>
+
+                                <div class="col-md-10 mb-4 resume-item contact d-none">
+                                    <div class="border-start border-2 border-light pt-2 ps-5">
+                                        <!-- Contact Item -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Email</h5>
+                                            <p class="mb-2">Shoriful.swe@gmail.com</p>
+                                            <p>Feel free to reach out to me via email for any queries.</p>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
+                                        <!-- Phone Number -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Phone No</h5>
+                                            <p class="mb-2">01781227798</p>
+                                            <p>You can also call for any inquiry or collaboration opportunity.</p>
+                                        </div>
+                                        <!-- Social Media Links -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Get In Touch</h5>
+                                            <p class="mb-2">
+                                                <div class="d-flex justify-content-left mt-auto mb-3">
+                                                    <a class="btn btn-secondary btn-square mx-1" href="https://github.com/shoriful-Islamm" target="_blank"><i class="fab fa-github"></i></a>
+                                                    <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/shoriful-islam-66b9211a7" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                    <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                </div>
+                                            </p>
+                                            <p>Connect with me on social media or send a message for more information.</p>
+                                        </div>
+                                        <!-- Curriculum Vitae -->
+                                        <div class="position-relative mb-4">
+                                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                            <h5 class="mb-1">Curriculum Vitae</h5>
+                                            <p class="mb-2">
+                                                <div class="d-flex justify-content-left">
+                                                    <a href="img/curriculum vitae.pdf" class="btn btn-secondary w-50" target="_blank">Download CV</a>
+                                                </div>
+                                            </p>
+                                            <p>Click the button above to download my CV and learn more about me.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Portfolio End -->
+                    </div>
+                </section>
+                <!-- Resume End -->
 
-                    <!-- Testimonial Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Testimonial</h1>
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
+                <!-- Start Portfolio Section -->
+                <section class="py-5 border-bottom wow fadeInUp" id="portfolio" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5 text-left">Portfolio</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row portfolio-container">
+
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/inventory/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/inventory/Capture1.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://isms.monirsoft.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#inventory">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>              
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/umrah_sheba/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/umrah_sheba/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://umrahsheba.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#umrah_sheba">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>              
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/tele_market/Capture2.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/tele_market/Capture3.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://tele-marketing.monirsoft.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#tele_market">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/muskan_holidays/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/muskan_holidays/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://holidays.airticketbangladesh.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#muskan_holidays">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
+                                </div>               
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/atoztour/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/atoztour/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://atoztour.net/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#atoztour">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>                           
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/high_school/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/high_school/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="http://bcbhs.airticketbangladesh.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#high_school">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/mrkohinoor/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/mrkohinoor/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://www.mrkohinoorenterprise.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#mrkohinoor">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/nedo/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/nedo/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://nedobogra.airticketbangladesh.com/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#nedo">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Portfolio End -->
+
+                <!-- Testimonial Start -->
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Testimonial</h1>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-left">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr
+                                dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet
+                                eirmod eos, labore diam clita</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <p class="text-primary fs-5 mb-1">Client Name</p>
+                                    <i>Profession</i>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Testimonial End -->
-
-                    <!-- Contact Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                        <h1 class="title pb-3 mb-5">Contact Me</h1>
-						<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a></p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        <div class="text-left">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr
+                                dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet
+                                eirmod eos, labore diam clita</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <p class="text-primary fs-5 mb-1">Client Name</p>
+                                    <i>Profession</i>
                                 </div>
                             </div>
-                        </form>
-                    </section>
-                    <!-- Contact End -->
-
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="d-flex justify-content-center mb-3">
-                                <a class="text-light px-3 border-end" href="#">Privacy</a>
-                                <a class="text-light px-3 border-end" href="#">Terms</a>
-                                <a class="text-light px-3 border-end" href="#">FAQs</a>
-                                <a class="text-light px-3" href="#">Help</a>
-                            </div>
-							<p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
                         </div>
-                    </section>
-                    <!-- Footer End -->
+                        <div class="text-left">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr
+                                dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet
+                                eirmod eos, labore diam clita</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <p class="text-primary fs-5 mb-1">Client Name</p>
+                                    <i>Profession</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonial End -->
+
+                <!-- Footer Start -->
+                <section class="wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary text-light text-center p-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <a class="btn btn-secondary btn-square mx-1" href="https://github.com/shoriful-Islamm" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/shoriful-islam-66b9211a7" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p class="m-0">&copy; All Rights Reserved. Designed by <a href>Shoriful Islam</a></p>
+                    </div>
+                </section>
+                <!-- Footer End -->
+            </div>
+        </div>
+
+        <!-- Modal inventory-->
+        <div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">inventory</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/inventory/Capture2.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Umrah Sheba-->
+        <div class="modal fade" id="umrah_sheba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Umrah Sheba</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/umrah_sheba/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Tele Marketing-->
+        <div class="modal fade" id="tele_market" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tele Marketing</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/tele_market/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal muskan_holidays-->
+        <div class="modal fade" id="muskan_holidays" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Muskan Holidays</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Key Features:</strong> <br>
+                        Tour Package Management: Admin panel to add, update, and delete tour packages with details like price, duration, and itinerary. <br>
+                        User Registration and Login: User authentication for secure bookings, with the ability to create accounts and manage bookings. <br>
+                        Real-Time Availability and Booking: Live availability of tours and real-time booking confirmation with automated email notifications. <br>
+                        Payment Gateway Integration: Secure integration with PayPal and Stripe for online payments. <br>
+                        User Reviews and Ratings: Users can leave reviews and rate tour packages, improving trust for future customers. <br>
+                        Responsive Design: Optimized for desktop and mobile users, providing a seamless experience across all devices. <br>
+                        Technologies Used:
+                        Backend: PHP, Laravel
+                        Frontend: Blade Templates, Bootstrap, JavaScript, jQuery, CSS3, HTML5
+                        Database: MySQL
+                        Payment Integration: Stripe API, PayPal API
+                        Other Libraries: Owl Carousel for tour slideshows, Google Maps API for displaying tour locations.
+                        Challenges & Solutions:
+                        Challenge: Managing real-time availability across multiple tour bookings, especially when many users are browsing and booking at the same time.
+                        Solution: Implemented a queuing system to handle simultaneous bookings and prevent overbooking of popular tours.
+                        Role:
+                        As the lead full-stack developer, I was responsible for developing both the frontend and backend of the platform. This included setting up the MySQL database schema, creating the tour management system, and integrating the payment gateways.
+
+                        Outcome:
+                        The platform successfully handled over 1,000 users in the first month after launch, with a 20% increase in completed bookings compared to traditional booking methods. The system reduced booking errors and provided a user-friendly experience for both travelers and admins. <br>
+                        <img class="img-fluid w-100" src="img/muskan_holidays/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal atoztour-->
+        <div class="modal fade" id="atoztour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Atoztour</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/atoztour/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal high_school-->
+        <div class="modal fade" id="high_school" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bcbhs School</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/high_school/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal mrkohinoor-->
+        <div class="modal fade" id="mrkohinoor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mrkohinoorenterprise</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/mrkohinoor/Capture1.PNG" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal mrkohinoor-->
+        <div class="modal fade" id="nedo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nedobogra</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Modals have two optional sizes, available via modifier classes to be placed on a
+                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
+                        on narrower viewports.
+                        <img class="img-fluid w-100" src="img/nedo/Capture1.PNG" alt="Project Image">
+                    </div>
                 </div>
             </div>
         </div>
 
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function filterItems(event, category, section) {
+            if (section === 'resume') {
+                const items = document.querySelectorAll('.resume-container .resume-item');
+                items.forEach(item => item.classList.add('d-none'));
+    
+                const buttons = document.querySelectorAll('#resume-filters li');
+                buttons.forEach(button => button.classList.remove('active'));
+    
+                const selectedItems = document.querySelectorAll(`.resume-container .${category}`);
+                selectedItems.forEach(item => item.classList.remove('d-none'));
+
+                event.currentTarget.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
 </html>
