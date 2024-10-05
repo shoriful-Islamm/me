@@ -76,6 +76,20 @@
                 overflow: hidden;
             }
         </style>
+        <style>
+            .section-title {
+                font-size: 1.75rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #0d6efd;
+                display: inline-block;
+                padding-bottom: 0.5rem;
+            }
+            /* .modal-body {
+                max-height: 70vh;
+                overflow-y: auto;
+            } */
+        </style>
 </head>
 
 <body>
@@ -498,20 +512,121 @@
                 <!-- Footer End -->
             </div>
         </div>
-
         <!-- Modal inventory-->
         <div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content bg-secondary">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">inventory</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"> <i class="bi bi-briefcase-fill me-2"></i>Inventory & Sales Management System(ISMS)</h5>
                         <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Overview</div>
+                                <p>
+                                    ISMS is a comprehensive inventory and sales management system designed to streamline and automate stock
+                                    management, sales tracking, and reporting for businesses with multiple store locations. The system
+                                    offers real-time updates across all branches, enabling efficient decision-making and better control over
+                                    inventory.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- My Role Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">My Role</div>
+                                <p>
+                                    As a team member, I contributed to both the backend and frontend development of the system. My main
+                                    responsibilities included developing the inventory module using <strong>Laravel</strong> and designing
+                                    user-friendly interfaces with <strong>Bootstrap</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Team Contribution Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Team Contribution</div>
+                                <p>
+                                    Collaborated closely with a team of four developers in an Agile environment, focusing on task division,
+                                    feature implementation, and code reviews. We held regular stand-up meetings to track progress and ensure
+                                    smooth communication.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Technologies Used Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Technologies Used</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light">
+                                        <strong>Backend:</strong> Laravel, MySQL
+                                    </li>
+                                    <li class="list-group-item bg-light">
+                                        <strong>Frontend:</strong> Bootstrap, JavaScript, jQuery
+                                    </li>
+                                    <li class="list-group-item bg-light">
+                                        <strong>APIs:</strong> RESTful API for third-party integrations
+                                    </li>
+                                    <li class="list-group-item bg-light">
+                                        <strong>Version Control:</strong> Git
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <!-- Key Features Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Key Features</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">📦 Multi-store support with centralized inventory tracking</li>
+                                    <li class="list-group-item">📈 Real-time sales tracking and reporting for all stores</li>
+                                    <li class="list-group-item">🔔 Low-stock alerts to prevent shortages</li>
+                                    <li class="list-group-item">🔐 User roles and permissions for managers, sales personnel, and admins</li>
+                                    <li class="list-group-item">📊 Sales and inventory reporting dashboards with visual charts</li>
+                                    <li class="list-group-item">📄 CSV export for inventory reports</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <!-- Challenges & Solutions Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Challenges & Solutions</div>
+                                <p>
+                                    One challenge we faced was ensuring real-time synchronization of inventory data across all stores. To
+                                    overcome this, we implemented a background job system using <strong>Laravel's queues</strong> and
+                                    optimized database queries to reduce load times, ensuring that stock levels and sales data were always
+                                    up to date.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Outcome Section -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="section-title text-primary">Outcome</div>
+                                <div class="highlight">
+                                    <p>
+                                        The system was successfully deployed across three store locations, reducing inventory management
+                                        time by 40% and increasing overall sales efficiency. The feedback from store managers and staff was
+                                        overwhelmingly positive, with particular praise for the user-friendly interface and real-time
+                                        reporting capabilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Image Section -->
                         <img class="img-fluid w-100" src="img/inventory/Capture2.PNG" alt="Project Image">
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
                     </div>
                 </div>
             </div>
