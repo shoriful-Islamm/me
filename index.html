@@ -521,108 +521,151 @@
                         <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Overview</div>
-                                <p>
-                                    ISMS is a comprehensive inventory and sales management system designed to streamline and automate stock
-                                    management, sales tracking, and reporting for businesses with multiple store locations. The system
-                                    offers real-time updates across all branches, enabling efficient decision-making and better control over
-                                    inventory.
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <!-- My Role Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">My Role</div>
-                                <p>
-                                    As a team member, I contributed to both the backend and frontend development of the system. My main
-                                    responsibilities included developing the inventory module using <strong>Laravel</strong> and designing
-                                    user-friendly interfaces with <strong>Bootstrap</strong>.
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <!-- Team Contribution Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Team Contribution</div>
-                                <p>
-                                    Collaborated closely with a team of four developers in an Agile environment, focusing on task division,
-                                    feature implementation, and code reviews. We held regular stand-up meetings to track progress and ensure
-                                    smooth communication.
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <!-- Technologies Used Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Technologies Used</div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light">
-                                        <strong>Backend:</strong> Laravel, MySQL
-                                    </li>
-                                    <li class="list-group-item bg-light">
-                                        <strong>Frontend:</strong> Bootstrap, JavaScript, jQuery
-                                    </li>
-                                    <li class="list-group-item bg-light">
-                                        <strong>APIs:</strong> RESTful API for third-party integrations
-                                    </li>
-                                    <li class="list-group-item bg-light">
-                                        <strong>Version Control:</strong> Git
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                        <!-- Key Features Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Key Features</div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">📦 Multi-store support with centralized inventory tracking</li>
-                                    <li class="list-group-item">📈 Real-time sales tracking and reporting for all stores</li>
-                                    <li class="list-group-item">🔔 Low-stock alerts to prevent shortages</li>
-                                    <li class="list-group-item">🔐 User roles and permissions for managers, sales personnel, and admins</li>
-                                    <li class="list-group-item">📊 Sales and inventory reporting dashboards with visual charts</li>
-                                    <li class="list-group-item">📄 CSV export for inventory reports</li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                        <!-- Challenges & Solutions Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Challenges & Solutions</div>
-                                <p>
-                                    One challenge we faced was ensuring real-time synchronization of inventory data across all stores. To
-                                    overcome this, we implemented a background job system using <strong>Laravel's queues</strong> and
-                                    optimized database queries to reduce load times, ensuring that stock levels and sales data were always
-                                    up to date.
-                                </p>
-                            </div>
-                        </div>
-                    
-                        <!-- Outcome Section -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <div class="section-title text-primary">Outcome</div>
-                                <div class="highlight">
-                                    <p>
-                                        The system was successfully deployed across three store locations, reducing inventory management
-                                        time by 40% and increasing overall sales efficiency. The feedback from store managers and staff was
-                                        overwhelmingly positive, with particular praise for the user-friendly interface and real-time
-                                        reporting capabilities.
-                                    </p>
+                        <div class="accordion" id="ismsAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            ISMS is a comprehensive inventory and sales management system designed to streamline and automate stock  management, sales tracking, and reporting for businesses with multiple store locations. The system
+                                            offers real-time updates across all branches, enabling efficient decision-making and better control over
+                                            inventory.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a team member, I contributed to both the backend and frontend development of the system. My main
+                                            responsibilities included developing the inventory module using <strong>Laravel</strong> and designing
+                                            user-friendly interfaces with <strong>Bootstrap</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated closely with a team of four developers in an Agile environment, focusing on task division,
+                                            feature implementation, and code reviews. We held regular stand-up meetings to track progress and ensure
+                                            smooth communication.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful API for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white">📦 Multi-store support with centralized inventory tracking</li>
+                                            <li class="list-group-item bg-secondary text-white">📈 Real-time sales tracking and reporting for all stores</li>
+                                            <li class="list-group-item bg-secondary text-white">🔔 Low-stock alerts to prevent shortages</li>
+                                            <li class="list-group-item bg-secondary text-white">🔐 User roles and permissions for managers, sales personnel, and admins</li>
+                                            <li class="list-group-item bg-secondary text-white">📊 Sales and inventory reporting dashboards with visual charts</li>
+                                            <li class="list-group-item bg-secondary text-white">📄 CSV export for inventory reports</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            One challenge we faced was ensuring real-time synchronization of inventory data across all stores. To
+                                            overcome this, we implemented a background job system using <strong>Laravel's queues</strong> and
+                                            optimized database queries to reduce load times, ensuring that stock levels and sales data were always
+                                            up to date.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#ismsAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The system was successfully deployed across three store locations, reducing inventory management
+                                            time by 40% and increasing overall sales efficiency. The feedback from store managers and staff was
+                                            overwhelmingly positive, with particular praise for the user-friendly interface and real-time
+                                            reporting capabilities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                        <!-- Project Image -->
+                        <div class="text-center">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/inventory/Capture2.PNG" alt="Umrah Sheba Project">
                         </div>
-
-                        <!-- Project Image Section -->
-                        <img class="img-fluid w-100" src="img/inventory/Capture2.PNG" alt="Project Image">
                     </div>
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
@@ -640,10 +683,167 @@
                         <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/umrah_sheba/Capture1.PNG" alt="Project Image">
+                        <div class="accordion" id="challengesAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Umrah Sheba is a comprehensive web-based platform designed to facilitate the management and booking of religious pilgrimage packages, including Umrah and Hajj. The system incorporates a multi-level user hierarchy including administrators, users, agents, and sub-agents, each with distinct permissions. It enables seamless package creation, customization, and booking, providing a user-friendly experience for managing Umrah and Hajj services. The project includes dashboards for different user roles, an invoice system, and various other features tailored to ensure smooth management of religious trips.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong>, I was responsible for designing and implementing both front-end and back-end features. I developed the Umrah and Hajj package creation and booking systems, customized dashboards for various user roles, and integrated an invoice generation system to streamline financial tracking. I ensured the system's usability across different devices with responsive design.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            I worked in a team of <strong>3-5 developers</strong> using Agile methodology. I contributed to system architecture discussions, assisted with database design, and led key aspects of the role-based access control system. We collaborated through regular stand-ups, ensuring smooth progress and quick resolution of issues.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>UI Libraries:</strong> Google Fonts, Font Awesome, Bootstrap Icons, Owl Carousel, Lightbox, Animate.css</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-user-shield text-primary mr-2"></i> 
+                                                <strong>Role Management System:</strong> Admins can assign roles (admin, user, agent, sub-agent) and manage access permissions.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-box-open text-primary mr-2"></i> 
+                                                <strong>Umrah and Hajj Package Booking:</strong> Users can browse, book, and customize packages with live availability updates.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-cogs text-primary mr-2"></i> 
+                                                <strong>Custom Package Builder:</strong> Allows users to create personalized pilgrimage packages based on preferences like travel dates, accommodation, and transport options.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-tachometer-alt text-primary mr-2"></i> 
+                                                <strong>Dashboards:</strong> Special dashboards for agents and sub-agents to manage bookings, view invoices, and handle clients.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-file-invoice-dollar text-primary mr-2"></i> 
+                                                <strong>Invoice System:</strong> Automated invoice generation for users, agents, and sub-agents to track payments and bookings.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <i class="fas fa-mobile-alt text-primary mr-2"></i> 
+                                                <strong>Responsive Design:</strong> Optimized for desktop and mobile platforms to ensure accessibility from any device.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenge and Solution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Challenge and Solution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <h6>Challenge:</h6>
+                                        <p>
+                                            One of the main challenges faced during the development of Umrah Sheba was managing the complex user permissions and roles. With multiple user levels (administrators, agents, users, and sub-agents), it was crucial to ensure that each role had the appropriate access to specific functionalities without compromising the security and integrity of the platform.
+                                        </p>
+                                        <h6>Solution:</h6>
+                                        <p>
+                                            To address this challenge, I implemented a robust role-based access control (RBAC) system using Laravel's built-in authorization features. This allowed me to define user roles and permissions clearly, ensuring that each user could only access the features relevant to their role. Additionally, I created an intuitive user interface that provides role-specific dashboards, enhancing usability and helping users navigate the platform efficiently.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="headingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#challengesAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The <strong>Umrah Sheba</strong> platform successfully streamlined the entire process of booking religious pilgrimages, from browsing packages to booking and generating invoices. The role-based system provided security and ensured that the right users had access to the right features, enhancing trust in the system. The intuitive dashboards and automated systems reduced manual workload for agents and administrators, improving operational efficiency. Positive feedback from early adopters indicated high satisfaction with the customizable package options and the seamless user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/umrah_sheba/Capture1.PNG" alt="Umrah Sheba Project">
+                        </div>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
                     </div>
                 </div>
             </div>
