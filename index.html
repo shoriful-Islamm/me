@@ -102,6 +102,7 @@
 
     <div class="container">
         <div class="row g-5">
+            
             <div class="col-lg-4 sticky-lg-top vh-100">
                 <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
                     <img class="w-100 img-fluid mb-4" src="img/shoriful.png" alt="Image">
@@ -122,6 +123,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-8">
                 <!-- About Start -->
                 <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
@@ -443,6 +445,20 @@
                                         </div>
                                     </div>
                                 </div>                           
+                                <div class="col-md-6 col-lg-6 mb-4 portfolio-item">
+                                    <div class="card border-0 shadow-sm position-relative overflow-hidden">
+                                        <div class="portfolio-image">
+                                            <img class="img-fluid w-100" src="img/hdpsbd/Capture3.PNG" alt="Project Image">
+                                            <div class="overlay d-flex align-items-center justify-content-center">
+                                                <div class="text-center">
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="img/hdpsbd/Capture2.PNG" data-lightbox="portfolio">Img View</a>
+                                                    <a class="btn btn-outline-light btn-sm m-1" href="https://hdpsbd.org/" target="_blank">Live View</a> <br>
+                                                    <a class="btn btn-outline-light btn-sm m-1" data-toggle="modal" data-target="#hdpsbd">Project Brief</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
 
                             </div>
                         </div>
@@ -512,83 +528,83 @@
                 <!-- Footer End -->
             </div>
         </div>
-        <!-- Modal inventory-->
-        <div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+        <!-- Modal Inventory-->
+        <div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="inventoryModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content bg-secondary">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"> <i class="bi bi-briefcase-fill me-2"></i>Inventory & Sales Management System(ISMS)</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="inventoryModalLabel">
+                            <i class="bi bi-briefcase-fill me-2"></i>Inventory & Sales Management System(ISMS)
+                        </h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <div class="accordion" id="ismsAccordion">
+                        <div class="accordion" id="ismsAccordionInventory">
                             <!-- Overview -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingOne">
+                                <div class="card-header bg-primary" id="inventoryHeadingOne">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseOne" aria-expanded="true" aria-controls="inventoryCollapseOne">
                                             Overview
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseOne" class="collapse show" aria-labelledby="inventoryHeadingOne" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
-                                            ISMS is a comprehensive inventory and sales management system designed to streamline and automate stock  management, sales tracking, and reporting for businesses with multiple store locations. The system
-                                            offers real-time updates across all branches, enabling efficient decision-making and better control over
-                                            inventory.
+                                            ISMS is a comprehensive inventory and sales management system designed to streamline and automate stock management, sales tracking, and reporting for businesses with multiple store locations. The system offers real-time updates across all branches, enabling efficient decision-making and better control over inventory.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- My Role -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingTwo">
+                                <div class="card-header bg-primary" id="inventoryHeadingTwo">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseTwo" aria-expanded="false" aria-controls="inventoryCollapseTwo">
                                             My Role
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseTwo" class="collapse" aria-labelledby="inventoryHeadingTwo" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
-                                            As a team member, I contributed to both the backend and frontend development of the system. My main
-                                            responsibilities included developing the inventory module using <strong>Laravel</strong> and designing
-                                            user-friendly interfaces with <strong>Bootstrap</strong>.
+                                            As a team member, I contributed to both the backend and frontend development of the system. My main responsibilities included developing the inventory module using <strong>Laravel</strong> and designing user-friendly interfaces with <strong>Bootstrap</strong>.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Team Contribution -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingThree">
+                                <div class="card-header bg-primary" id="inventoryHeadingThree">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseThree" aria-expanded="false" aria-controls="inventoryCollapseThree">
                                             Team Contribution
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseThree" class="collapse" aria-labelledby="inventoryHeadingThree" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
-                                            Collaborated closely with a team of four developers in an Agile environment, focusing on task division,
-                                            feature implementation, and code reviews. We held regular stand-up meetings to track progress and ensure
-                                            smooth communication.
+                                            Collaborated closely with a team of four developers in an Agile environment, focusing on task division, feature implementation, and code reviews. We held regular stand-up meetings to track progress and ensure smooth communication.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Technologies Used -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingFour">
+                                <div class="card-header bg-primary" id="inventoryHeadingFour">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseFour" aria-expanded="false" aria-controls="inventoryCollapseFour">
                                             Technologies Used
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseFour" class="collapse" aria-labelledby="inventoryHeadingFour" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
@@ -601,14 +617,14 @@
                             </div>
                             <!-- Key Features -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingFive">
+                                <div class="card-header bg-primary" id="inventoryHeadingFive">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseFive" aria-expanded="false" aria-controls="inventoryCollapseFive">
                                             Key Features
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseFive" class="collapse" aria-labelledby="inventoryHeadingFive" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item bg-secondary text-white">📦 Multi-store support with centralized inventory tracking</li>
@@ -623,77 +639,73 @@
                             </div>
                             <!-- Challenges & Solutions -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingSix">
+                                <div class="card-header bg-primary" id="inventoryHeadingSix">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseSix" aria-expanded="false" aria-controls="inventoryCollapseSix">
                                             Challenges & Solutions
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseSix" class="collapse" aria-labelledby="inventoryHeadingSix" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
-                                            One challenge we faced was ensuring real-time synchronization of inventory data across all stores. To
-                                            overcome this, we implemented a background job system using <strong>Laravel's queues</strong> and
-                                            optimized database queries to reduce load times, ensuring that stock levels and sales data were always
-                                            up to date.
+                                            One challenge we faced was ensuring real-time synchronization of inventory data across all stores. To overcome this, we implemented a background job system using <strong>Laravel's queues</strong> and optimized database queries to reduce load times, ensuring that stock levels and sales data were always up to date.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Outcome -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingSeven">
+                                <div class="card-header bg-primary" id="inventoryHeadingSeven">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#inventoryCollapseSeven" aria-expanded="false" aria-controls="inventoryCollapseSeven">
                                             Outcome
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#ismsAccordion">
+                                <div id="inventoryCollapseSeven" class="collapse" aria-labelledby="inventoryHeadingSeven" data-parent="#ismsAccordionInventory">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
-                                            The system was successfully deployed across three store locations, reducing inventory management
-                                            time by 40% and increasing overall sales efficiency. The feedback from store managers and staff was
-                                            overwhelmingly positive, with particular praise for the user-friendly interface and real-time
-                                            reporting capabilities.
+                                            The system was successfully deployed across three store locations, reducing inventory management time by 40% and increasing overall sales efficiency. The feedback from store managers and staff was overwhelmingly positive, with particular praise for the user-friendly interface and real-time reporting capabilities.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>                  
                         <!-- Project Image -->
-                        <div class="text-center">
-                            <img class="img-fluid w-100 rounded shadow-sm" src="img/inventory/Capture2.PNG" alt="Umrah Sheba Project">
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/inventory/Capture2.PNG" alt="Inventory & Sales Management System Project">
                         </div>
                     </div>
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Modal Umrah Sheba-->
-        <div class="modal fade" id="umrah_sheba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="umrah_sheba" tabindex="-1" role="dialog" aria-labelledby="umrahShebaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content bg-secondary">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Umrah Sheba</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="umrahShebaModalLabel">Umrah Sheba</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <div class="accordion" id="challengesAccordion">
+                        <div class="accordion" id="challengesAccordionUmrahSheba">
                             <!-- Overview -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingOne">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingOne">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseOne" aria-expanded="true" aria-controls="umrahShebaCollapseOne">
                                             Overview
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseOne" class="collapse show" aria-labelledby="umrahShebaHeadingOne" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
                                             Umrah Sheba is a comprehensive web-based platform designed to facilitate the management and booking of religious pilgrimage packages, including Umrah and Hajj. The system incorporates a multi-level user hierarchy including administrators, users, agents, and sub-agents, each with distinct permissions. It enables seamless package creation, customization, and booking, providing a user-friendly experience for managing Umrah and Hajj services. The project includes dashboards for different user roles, an invoice system, and various other features tailored to ensure smooth management of religious trips.
@@ -703,14 +715,14 @@
                             </div>
                             <!-- My Role -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingTwo">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingTwo">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseTwo" aria-expanded="false" aria-controls="umrahShebaCollapseTwo">
                                             My Role
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseTwo" class="collapse" aria-labelledby="umrahShebaHeadingTwo" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
                                             As a <strong>Full Stack Developer</strong>, I was responsible for designing and implementing both front-end and back-end features. I developed the Umrah and Hajj package creation and booking systems, customized dashboards for various user roles, and integrated an invoice generation system to streamline financial tracking. I ensured the system's usability across different devices with responsive design.
@@ -720,14 +732,14 @@
                             </div>
                             <!-- Team Contribution -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingThree">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingThree">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseThree" aria-expanded="false" aria-controls="umrahShebaCollapseThree">
                                             Team Contribution
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseThree" class="collapse" aria-labelledby="umrahShebaHeadingThree" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
                                             I worked in a team of <strong>3-5 developers</strong> using Agile methodology. I contributed to system architecture discussions, assisted with database design, and led key aspects of the role-based access control system. We collaborated through regular stand-ups, ensuring smooth progress and quick resolution of issues.
@@ -737,14 +749,14 @@
                             </div>
                             <!-- Technologies Used -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingFour">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingFour">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseFour" aria-expanded="false" aria-controls="umrahShebaCollapseFour">
                                             Technologies Used
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseFour" class="collapse" aria-labelledby="umrahShebaHeadingFour" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
@@ -758,14 +770,14 @@
                             </div>
                             <!-- Key Features -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingFive">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingFive">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseFive" aria-expanded="false" aria-controls="umrahShebaCollapseFive">
                                             Key Features
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseFive" class="collapse" aria-labelledby="umrahShebaHeadingFive" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item bg-secondary text-white">
@@ -798,14 +810,14 @@
                             </div>
                             <!-- Challenge and Solution -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingSeven">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingSeven">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseSeven" aria-expanded="false" aria-controls="umrahShebaCollapseSeven">
                                             Challenge and Solution
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseSeven" class="collapse" aria-labelledby="umrahShebaHeadingSeven" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <h6>Challenge:</h6>
                                         <p>
@@ -820,14 +832,14 @@
                             </div>
                             <!-- Outcome -->
                             <div class="card mb-2">
-                                <div class="card-header bg-primary" id="headingSix">
+                                <div class="card-header bg-primary" id="umrahShebaHeadingSix">
                                     <h6 class="mb-0">
-                                        <button class="btn btn-link text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#umrahShebaCollapseSix" aria-expanded="false" aria-controls="umrahShebaCollapseSix">
                                             Outcome
                                         </button>
                                     </h6>
                                 </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#challengesAccordion">
+                                <div id="umrahShebaCollapseSix" class="collapse" aria-labelledby="umrahShebaHeadingSix" data-parent="#challengesAccordionUmrahSheba">
                                     <div class="card-body bg-secondary text-white">
                                         <p>
                                             The <strong>Umrah Sheba</strong> platform successfully streamlined the entire process of booking religious pilgrimages, from browsing packages to booking and generating invoices. The role-based system provided security and ensured that the right users had access to the right features, enhancing trust in the system. The intuitive dashboards and automated systems reduced manual workload for agents and administrators, improving operational efficiency. Positive feedback from early adopters indicated high satisfaction with the customizable package options and the seamless user experience.
@@ -837,140 +849,1480 @@
                             </div>
                         </div>
                         <!-- Project Image -->
-                        <div class="text-center">
+                        <div class="text-center mt-4">
                             <img class="img-fluid w-100 rounded shadow-sm" src="img/umrah_sheba/Capture1.PNG" alt="Umrah Sheba Project">
                         </div>
                     </div>
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Modal Tele Marketing-->
-        <div class="modal fade" id="tele_market" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="tele_market" tabindex="-1" role="dialog" aria-labelledby="teleMarketingModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content bg-secondary">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tele Marketing</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="teleMarketingModalLabel">Tele Marketing System</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/tele_market/Capture1.PNG" alt="Project Image">
+                        <div class="accordion" id="teleMarketingAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseOne" aria-expanded="true" aria-controls="teleMarketingCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseOne" class="collapse show" aria-labelledby="teleMarketingHeadingOne" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The Tele Marketing System is an advanced platform designed to optimize telemarketing operations by managing administrative tasks, client interactions, and daily conversations. The system provides a centralized interface for administrators to oversee user management, client lists, and data transfers, while enabling telemarketers to efficiently handle their daily interactions and conversations. With comprehensive settings for customization, the platform ensures seamless integration with various business processes, enhancing productivity and communication effectiveness.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseTwo" aria-expanded="false" aria-controls="teleMarketingCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseTwo" class="collapse" aria-labelledby="teleMarketingHeadingTwo" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> on the Tele Marketing System project, I was responsible for both front-end and back-end development. My tasks included designing intuitive user interfaces using <strong>Bootstrap</strong>, implementing robust server-side logic with <strong>Laravel</strong>, and ensuring seamless database interactions using <strong>MySQL</strong>. Additionally, I integrated real-time features to facilitate efficient communication and data management within the platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseThree" aria-expanded="false" aria-controls="teleMarketingCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseThree" class="collapse" aria-labelledby="teleMarketingHeadingThree" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a dynamic team of <strong>4-6 developers</strong> following Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing key features such as user authentication and client management modules. Regular stand-up meetings and collaborative tools ensured effective communication and timely delivery of project milestones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseFour" aria-expanded="false" aria-controls="teleMarketingCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseFour" class="collapse" aria-labelledby="teleMarketingHeadingFour" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseFive" aria-expanded="false" aria-controls="teleMarketingCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseFive" class="collapse" aria-labelledby="teleMarketingHeadingFive" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📊 <strong>Manage Admin:</strong> Comprehensive tools for managing administrative users, including listing and creating admin users.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                👥 <strong>Admin User List:</strong> View and manage all admin users with detailed profiles and permissions.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                ➕ <strong>Create Admin User:</strong> Easily add new admin users with specific roles and access levels.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📇 <strong>Client:</strong> Manage client-related activities, including viewing and transferring clients.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📋 <strong>Own Client List:</strong> Access and manage your own list of clients efficiently.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🔄 <strong>Client Transfer:</strong> Seamlessly transfer clients between different telemarketers or departments.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📞 <strong>Daily Conversation:</strong> Track and manage daily conversations with clients to ensure consistent follow-ups.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🗨️ <strong>Own Conversation:</strong> Access your own conversation history and notes for personalized client interactions.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📅 <strong>D.W. Conversation:</strong> Manage daily work (D.W.) conversations with detailed logs and summaries.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                ⚙️ <strong>Settings:</strong> Customize system settings to align with your business needs.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🖼️ <strong>Logo & Web Title:</strong> Update the platform's logo and web title to reflect your brand identity.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🏢 <strong>Business Type:</strong> Define and manage different business types within the system.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📈 <strong>Source:</strong> Track and manage the sources of your leads and clients for better marketing strategies.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🏭 <strong>Company:</strong> Manage company profiles and related information within the platform.
+                                            </li>
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🔒 <strong>Company Privilege:</strong> Assign and manage privileges for different companies to control access and functionality.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseSix" aria-expanded="false" aria-controls="teleMarketingCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseSix" class="collapse" aria-labelledby="teleMarketingHeadingSix" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            **Challenge:** One significant challenge was implementing a robust role-based access control system that could handle multiple administrative levels and ensure secure client data management. Balancing flexibility for admins with security for client information required careful planning and execution.
+                                        </p>
+                                        <p>
+                                            **Solution:** To overcome this, I utilized Laravel's built-in authorization features combined with custom middleware to define and enforce user roles and permissions meticulously. This approach ensured that each user had access only to the functionalities pertinent to their role. Additionally, comprehensive testing was conducted to identify and rectify any potential security vulnerabilities, ensuring the integrity and confidentiality of client data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="teleMarketingHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#teleMarketingCollapseSeven" aria-expanded="false" aria-controls="teleMarketingCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="teleMarketingCollapseSeven" class="collapse" aria-labelledby="teleMarketingHeadingSeven" data-parent="#teleMarketingAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Tele Marketing System** was successfully deployed, significantly enhancing the efficiency of telemarketing operations. Administrators can effortlessly manage users and clients, while telemarketers benefit from streamlined workflows and comprehensive client interaction tracking. The system's robust security measures ensure data integrity, and the customizable settings allow businesses to tailor the platform to their specific needs. Early feedback highlighted improvements in productivity, better client management, and enhanced communication within the team.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/tele_market/Capture1.PNG" alt="Tele Marketing Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal muskan_holidays-->
-        <div class="modal fade" id="muskan_holidays" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content bg-secondary">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Muskan Holidays</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <strong>Key Features:</strong> <br>
-                        Tour Package Management: Admin panel to add, update, and delete tour packages with details like price, duration, and itinerary. <br>
-                        User Registration and Login: User authentication for secure bookings, with the ability to create accounts and manage bookings. <br>
-                        Real-Time Availability and Booking: Live availability of tours and real-time booking confirmation with automated email notifications. <br>
-                        Payment Gateway Integration: Secure integration with PayPal and Stripe for online payments. <br>
-                        User Reviews and Ratings: Users can leave reviews and rate tour packages, improving trust for future customers. <br>
-                        Responsive Design: Optimized for desktop and mobile users, providing a seamless experience across all devices. <br>
-                        Technologies Used:
-                        Backend: PHP, Laravel
-                        Frontend: Blade Templates, Bootstrap, JavaScript, jQuery, CSS3, HTML5
-                        Database: MySQL
-                        Payment Integration: Stripe API, PayPal API
-                        Other Libraries: Owl Carousel for tour slideshows, Google Maps API for displaying tour locations.
-                        Challenges & Solutions:
-                        Challenge: Managing real-time availability across multiple tour bookings, especially when many users are browsing and booking at the same time.
-                        Solution: Implemented a queuing system to handle simultaneous bookings and prevent overbooking of popular tours.
-                        Role:
-                        As the lead full-stack developer, I was responsible for developing both the frontend and backend of the platform. This included setting up the MySQL database schema, creating the tour management system, and integrating the payment gateways.
 
-                        Outcome:
-                        The platform successfully handled over 1,000 users in the first month after launch, with a 20% increase in completed bookings compared to traditional booking methods. The system reduced booking errors and provided a user-friendly experience for both travelers and admins. <br>
-                        <img class="img-fluid w-100" src="img/muskan_holidays/Capture1.PNG" alt="Project Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal atoztour-->
-        <div class="modal fade" id="atoztour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal Muskan Holidays-->
+        <div class="modal fade" id="muskan_holidays" tabindex="-1" role="dialog" aria-labelledby="muskanHolidaysModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content bg-secondary">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Atoztour</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="muskanHolidaysModalLabel">Muskan Holidays</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/atoztour/Capture1.PNG" alt="Project Image">
+                        <div class="accordion" id="muskanHolidaysAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseOne" aria-expanded="true" aria-controls="muskanHolidaysCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseOne" class="collapse show" aria-labelledby="muskanHolidaysHeadingOne" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Muskan Holidays is a dynamic travel management platform designed to streamline the booking and management of holiday packages, including hotel and flight bookings. The system offers comprehensive features for administrators and users alike, facilitating efficient management of tours, bookings, payments, and customer interactions. With robust settings and customization options, Muskan Holidays ensures a seamless and user-friendly experience for both administrators and customers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseTwo" aria-expanded="false" aria-controls="muskanHolidaysCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseTwo" class="collapse" aria-labelledby="muskanHolidaysHeadingTwo" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As the <strong>Lead Full-Stack Developer</strong> for Muskan Holidays, I was responsible for both frontend and backend development. My duties included designing and implementing the MySQL database schema, developing the tour package management system, integrating payment gateways, and ensuring a responsive and intuitive user interface using <strong>Bootstrap</strong> and <strong>Blade Templates</strong>. Additionally, I oversaw the integration of third-party APIs and managed the overall architecture to ensure scalability and performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseThree" aria-expanded="false" aria-controls="muskanHolidaysCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseThree" class="collapse" aria-labelledby="muskanHolidaysHeadingThree" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            I collaborated with a dedicated team of <strong>5-7 developers</strong> following Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing key modules such as admin user management, client handling, booking systems, and payment integrations. Effective communication and collaboration were maintained through regular stand-up meetings and the use of collaborative tools, ensuring timely and quality delivery of project milestones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseFour" aria-expanded="false" aria-controls="muskanHolidaysCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseFour" class="collapse" aria-labelledby="muskanHolidaysHeadingFour" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> PHP, Laravel</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Blade Templates, Bootstrap, JavaScript, jQuery, CSS3, HTML5</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Database:</strong> MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Payment Integration:</strong> Stripe API, PayPal API</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Other Libraries:</strong> Owl Carousel for tour slideshows, Google Maps API for displaying tour locations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseFive" aria-expanded="false" aria-controls="muskanHolidaysCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseFive" class="collapse" aria-labelledby="muskanHolidaysHeadingFive" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Manage Admin Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage Admin:</strong> Comprehensive tools for managing administrative users.
+                                                <ul>
+                                                    <li>👥 <strong>Admin User List:</strong> View and manage all admin users with detailed profiles and permissions.</li>
+                                                    <li>➕ <strong>Create Admin User:</strong> Easily add new admin users with specific roles and access levels.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Manage User Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage User:</strong> Efficient management of platform users.
+                                                <ul>
+                                                    <li>📋 <strong>User List:</strong> Access and manage the complete list of users.</li>
+                                                    <li>🆕 <strong>User Create:</strong> Create new user accounts with tailored permissions.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Hotel Booking Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Hotel Booking:</strong> Streamlined hotel reservation management.
+                                                <ul>
+                                                    <li>📚 <strong>Hotel Book List:</strong> View and manage all hotel bookings.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Flight Booking Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Flight Booking:</strong> Simplified flight reservation handling.
+                                                <ul>
+                                                    <li>✈️ <strong>Flight Book List:</strong> Manage and review all flight bookings.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Tour Package Booking Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Tour Package Book:</strong> Comprehensive management of tour package bookings.
+                                                <ul>
+                                                    <li>📦 <strong>Tour Pack. Book List:</strong> Oversee all tour package bookings.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Online Payment Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Online Payment List:</strong> Track and manage all online payment transactions.
+                                            </li>
+                                            <!-- Package Comments Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Pack. Comments List:</strong> Monitor and respond to user comments and reviews on packages.
+                                            </li>
+                                            <!-- Settings Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Settings:</strong> Customize and manage platform settings.
+                                                <ul>
+                                                    <li>🗺️ <strong>Manage Tour Package:</strong> Create and manage various tour packages.</li>
+                                                    <li>🌍 <strong>Destination:</strong> Manage travel destinations.
+                                                        <ul>
+                                                            <li>➕ <strong>Destination Create:</strong> Add new destinations to the platform.</li>
+                                                            <li>📄 <strong>Domestic Tour List:</strong> Manage domestic tour listings.</li>
+                                                            <li>🌐 <strong>International Tour List:</strong> Oversee international tour listings.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>📅 <strong>Tour Package:</strong> Detailed management of tour packages.
+                                                        <ul>
+                                                            <li>➕ <strong>Tour Package Create:</strong> Develop new tour packages.</li>
+                                                            <li>📄 <strong>Domestic Tour List:</strong> Handle domestic tour packages.</li>
+                                                            <li>🌐 <strong>International Tour List:</strong> Manage international tour packages.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>🗺️ <strong>Tour Itinerary:</strong> Design and manage tour itineraries.</li>
+                                                    <li>⚙️ <strong>Manage Site Setting:</strong> Configure site-wide settings.
+                                                        <ul>
+                                                            <li>🖼️ <strong>Logo & Web Info:</strong> Update the platform's logo and website information.</li>
+                                                            <li>🎞️ <strong>Slider:</strong> Manage image sliders for promotions.</li>
+                                                            <li>📖 <strong>About Us:</strong> Edit the About Us section.</li>
+                                                            <li>🏞️ <strong>Adventure Activities:</strong> Add and manage adventure activities.</li>
+                                                            <li>📝 <strong>Blog:</strong> Create and manage blog posts.</li>
+                                                            <li>📚 <strong>Travel Info:</strong> Provide essential travel information.</li>
+                                                            <li>❓ <strong>Why Book with Us:</strong> Highlight reasons to choose Muskan Holidays.</li>
+                                                            <li>🌐 <strong>Nationality:</strong> Manage user nationalities.</li>
+                                                            <li>📞 <strong>Person R.No:</strong> Handle person-related information and contact numbers.</li>
+                                                            <li>💬 <strong>Customer Review:</strong> Display and manage customer reviews.</li>
+                                                            <li>🔒 <strong>Your Personal Information:</strong> Securely handle user personal information.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- Booking Form Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Booking Form:</strong> User-friendly form for booking tours.
+                                                <ul>
+                                                    <li>📝 <strong>First Name*:</strong> Input field for user's first name.</li>
+                                                    <li>📝 <strong>Last Name:</strong> Input field for user's last name.</li>
+                                                    <li>📧 <strong>Your Email*:</strong> Input field for user's email address.</li>
+                                                    <li>📞 <strong>Phone Number*:</strong> Input field for user's phone number.</li>
+                                                    <li>📍 <strong>Address:</strong> Input field for user's address.</li>
+                                                    <li>✅ <strong>I agree to all terms and policies:</strong> Checkbox for agreement.</li>
+                                                    <li>💳 <strong>Select Payment Method (Optional):</strong> Dropdown for selecting payment methods.
+                                                        <ul>
+                                                            <li>🏦 <strong>Brac Bank Ltd</strong></li>
+                                                            <li>🏦 <strong>Dutch Bangla</strong></li>
+                                                            <li>🏦 <strong>Islami Bank</strong></li>
+                                                            <li>💳 <strong>SSLCommerz</strong></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>👤 <strong>Card Holder Name:</strong> Input field for card holder's name.</li>
+                                                    <li>💳 <strong>Card Number:</strong> Input field for card number.</li>
+                                                    <li>📆 <strong>Expiry Month:</strong> Dropdown for selecting expiry month.</li>
+                                                    <li>📆 <strong>Expiry Year:</strong> Dropdown for selecting expiry year.</li>
+                                                    <li>🔒 <strong>CVV:</strong> Input field for card CVV.</li>
+                                                    <li>📜 <strong>By continuing, you agree to the Terms and Conditions:</strong> Statement of agreement.</li>
+                                                    <li>🛒 <strong>Book Now:</strong> Submission button for booking.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Additional Booking Details Section -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Additional Booking Details:</strong>
+                                                <ul>
+                                                    <li>👥 <strong>Adult:</strong> Number selector for adults.</li>
+                                                    <li>👶 <strong>Infant:</strong> Number selector for infants.</li>
+                                                    <li>📅 <strong>Date*:</strong> Date range selector for booking dates.</li>
+                                                    <li>📸 <strong>Images:</strong> Gallery displaying selected tour images.</li>
+                                                    <li>📍 <strong>Kalkata (4 days):</strong> Example tour package with details.</li>
+                                                    <li>👤 <strong>1 x Adults:</strong> Number of adults.</li>
+                                                    <li>💰 <strong>444 ৳:</strong> Price per adult.</li>
+                                                    <li>👶 <strong>0 x Infants:</strong> Number of infants.</li>
+                                                    <li>💰 <strong>0 ৳:</strong> Price per infant.</li>
+                                                    <li>💸 <strong>Total price:</strong> Overall booking price.</li>
+                                                    <li>💰 <strong>444 ৳:</strong> Displayed total price.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseSix" aria-expanded="false" aria-controls="muskanHolidaysCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseSix" class="collapse" aria-labelledby="muskanHolidaysHeadingSix" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <h6>Challenge:</h6>
+                                        <p>
+                                            Managing real-time availability across multiple tour bookings was a significant challenge, especially during peak booking periods when numerous users were browsing and making reservations simultaneously. Ensuring data consistency and preventing overbooking of popular tours required an efficient and reliable solution.
+                                        </p>
+                                        <h6>Solution:</h6>
+                                        <p>
+                                            To address this, I implemented a queuing system that effectively handled simultaneous booking requests. This system managed the order of transactions, ensuring that each booking was processed sequentially to maintain data integrity. Additionally, I optimized database queries and utilized Laravel's built-in features to lock records during transactions, preventing race conditions and overbooking. Automated email notifications were integrated to provide real-time booking confirmations to users, enhancing the overall user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="muskanHolidaysHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#muskanHolidaysCollapseSeven" aria-expanded="false" aria-controls="muskanHolidaysCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="muskanHolidaysCollapseSeven" class="collapse" aria-labelledby="muskanHolidaysHeadingSeven" data-parent="#muskanHolidaysAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Muskan Holidays** platform was successfully launched and managed to handle over **1,000 users** in the first month post-launch. There was a **20% increase in completed bookings** compared to traditional booking methods. The system significantly reduced booking errors and provided a seamless, user-friendly experience for both travelers and administrators. Positive feedback highlighted the platform's intuitive interface, real-time booking capabilities, and efficient payment processing. The successful implementation of robust features and solutions led to enhanced operational efficiency and customer satisfaction.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/muskan_holidays/Capture1.PNG" alt="Muskan Holidays Project">
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal high_school-->
-        <div class="modal fade" id="high_school" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content bg-secondary">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Bcbhs School</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/high_school/Capture1.PNG" alt="Project Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal mrkohinoor-->
-        <div class="modal fade" id="mrkohinoor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content bg-secondary">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Mrkohinoorenterprise</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/mrkohinoor/Capture1.PNG" alt="Project Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal mrkohinoor-->
-        <div class="modal fade" id="nedo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content bg-secondary">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nedobogra</h5>
-                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close"><span class="text-light" aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        Modals have two optional sizes, available via modifier classes to be placed on a
-                        .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars
-                        on narrower viewports.
-                        <img class="img-fluid w-100" src="img/nedo/Capture1.PNG" alt="Project Image">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- Modal Atoztour -->
+        <div class="modal fade" id="atoztour" tabindex="-1" role="dialog" aria-labelledby="atoztourModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="atoztourModalLabel">Atoztour</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="atoztourAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseOne" aria-expanded="true" aria-controls="atoztourCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseOne" class="collapse show" aria-labelledby="atoztourHeadingOne" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            **Atoztour** is a robust travel management platform designed to streamline the booking and administration of tour packages, visa services, hotel and flight bookings. The system offers comprehensive management tools for administrators and users, ensuring efficient handling of travel-related operations. With customizable settings and a user-friendly interface, Atoztour caters to the dynamic needs of the travel industry, enhancing productivity and customer satisfaction.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseTwo" aria-expanded="false" aria-controls="atoztourCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseTwo" class="collapse" aria-labelledby="atoztourHeadingTwo" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> on the **Atoztour** project, I was responsible for designing and implementing both front-end and back-end functionalities. My tasks included developing user-friendly interfaces using <strong>Bootstrap</strong> and <strong>HTML5/CSS3</strong>, building robust server-side logic with <strong>Laravel</strong>, and ensuring efficient database interactions with <strong>MySQL</strong>. Additionally, I integrated various booking systems and customized settings to align with business requirements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseThree" aria-expanded="false" aria-controls="atoztourCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseThree" class="collapse" aria-labelledby="atoztourHeadingThree" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a dedicated team of <strong>4-6 developers</strong> utilizing Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing key modules such as admin management and booking systems. Regular stand-up meetings and effective communication tools facilitated seamless collaboration and timely project deliveries.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseFour" aria-expanded="false" aria-controls="atoztourCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseFour" class="collapse" aria-labelledby="atoztourHeadingFour" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>UI Libraries:</strong> Font Awesome, Bootstrap Icons, Owl Carousel, Lightbox</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseFive" aria-expanded="false" aria-controls="atoztourCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseFive" class="collapse" aria-labelledby="atoztourHeadingFive" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Manage Admin -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage Admin:</strong>
+                                                <ul>
+                                                    <li>Admin User List</li>
+                                                    <li>Create Admin User</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Tour Package Book -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Tour Package Book:</strong>
+                                                <ul>
+                                                    <li>Tour Book List</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Visa Service Book -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Visa Service Book:</strong>
+                                                <ul>
+                                                    <li>Visa Book List</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Hotel Booking -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Hotel Booking:</strong>
+                                                <ul>
+                                                    <li>Hotel Book List</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Flight Booking -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Flight Booking:</strong>
+                                                <ul>
+                                                    <li>Flight Book List</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Settings -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Settings:</strong>
+                                                <ul>
+                                                    <li>Manage Visa Service
+                                                        <ul>
+                                                            <li>Visa Service</li>
+                                                            <li>Visa Itinerary</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Manage Tour Package
+                                                        <ul>
+                                                            <li>Tour Package</li>
+                                                            <li>Tour Itinerary</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Site Setting & Others
+                                                        <ul>
+                                                            <li>Country</li>
+                                                            <li>Nationality</li>
+                                                            <li>Person R.No</li>
+                                                            <li>Slider</li>
+                                                            <li>About Us</li>
+                                                            <li>Travel Info</li>
+                                                            <li>Choose Us</li>
+                                                            <li>Contact</li>
+                                                            <li>Logo & Web Info</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseSix" aria-expanded="false" aria-controls="atoztourCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseSix" class="collapse" aria-labelledby="atoztourHeadingSix" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <h6>Challenge:</h6>
+                                        <p>
+                                            One of the primary challenges in developing the **Atoztour** platform was integrating multiple booking systems (tour packages, visas, hotels, and flights) into a seamless and user-friendly interface. Ensuring data consistency and real-time synchronization across these systems was crucial to provide a reliable booking experience for users.
+                                        </p>
+                                        <h6>Solution:</h6>
+                                        <p>
+                                            To address this, I implemented a modular architecture using Laravel's service providers, allowing each booking system to operate independently while maintaining data integrity. I utilized Laravel's queue system to handle asynchronous tasks, ensuring real-time updates and synchronization. Additionally, thorough testing and validation mechanisms were put in place to catch and resolve any data discrepancies promptly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="atoztourHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#atoztourCollapseSeven" aria-expanded="false" aria-controls="atoztourCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="atoztourCollapseSeven" class="collapse" aria-labelledby="atoztourHeadingSeven" data-parent="#atoztourAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Atoztour** platform was successfully deployed, revolutionizing the way travel bookings are managed. Administrators can effortlessly handle user management, booking lists, and settings, while users enjoy a streamlined booking process for tours, visas, hotels, and flights. The integration of customizable settings and comprehensive management tools has significantly enhanced operational efficiency and user satisfaction. Feedback from stakeholders highlighted the platform's intuitive interface, robust functionality, and reliable performance, positioning **Atoztour** as a leading solution in the travel management industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/atoztour/Capture1.PNG" alt="Atoztour Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal Bcbhs School-->
+        <div class="modal fade" id="high_school" tabindex="-1" role="dialog" aria-labelledby="highSchoolModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="highSchoolModalLabel">Bcbhs School</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="highSchoolAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseOne" aria-expanded="true" aria-controls="highSchoolCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseOne" class="collapse show" aria-labelledby="highSchoolHeadingOne" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The Bcbhs School Management System is an integrated platform designed to streamline administrative tasks, manage student and teacher data, and enhance communication within the school community. The system offers comprehensive modules for managing admin users, student information, academic records, and various site settings. With features like role-based access control, detailed reporting, and multimedia galleries, the platform ensures efficient and effective school management.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseTwo" aria-expanded="false" aria-controls="highSchoolCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseTwo" class="collapse" aria-labelledby="highSchoolHeadingTwo" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> on the Bcbhs School Management System project, I was responsible for both front-end and back-end development. My duties included designing intuitive user interfaces using <strong>Bootstrap</strong>, implementing robust server-side logic with <strong>Laravel</strong>, and ensuring seamless database interactions using <strong>MySQL</strong>. Additionally, I integrated features for role-based access control and developed modules for managing students, teachers, and site settings.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseThree" aria-expanded="false" aria-controls="highSchoolCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseThree" class="collapse" aria-labelledby="highSchoolHeadingThree" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a dedicated team of <strong>4-6 developers</strong> following Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing key features such as user authentication, student management, and teacher profiling modules. Regular stand-up meetings and collaborative tools ensured effective communication and timely delivery of project milestones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseFour" aria-expanded="false" aria-controls="highSchoolCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseFour" class="collapse" aria-labelledby="highSchoolHeadingFour" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseFive" aria-expanded="false" aria-controls="highSchoolCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseFive" class="collapse" aria-labelledby="highSchoolHeadingFive" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Manage Admin -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage Admin:</strong> Comprehensive tools for managing administrative users.
+                                                <ul>
+                                                    <li>👥 <strong>Admin User List:</strong> View and manage all admin users with detailed profiles and permissions.</li>
+                                                    <li>➕ <strong>Create Admin User:</strong> Easily add new admin users with specific roles and access levels.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Settings -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Settings:</strong> Customizable settings to align the system with school requirements.
+                                                <ul>
+                                                    <!-- Manage Students -->
+                                                    <li>
+                                                        📚 <strong>Manage Students:</strong>
+                                                        <ul>
+                                                            <li>🏫 <strong>Class Name:</strong> Define and manage different classes within the school.</li>
+                                                            <li>🗓️ <strong>Session:</strong> Manage academic sessions and timelines.</li>
+                                                            <li>📋 <strong>Student List:</strong> Access and manage the list of enrolled students.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- Teachers & Academic -->
+                                                    <li>
+                                                        👩‍🏫 <strong>Teachers & Academic:</strong>
+                                                        <ul>
+                                                            <li>🏷️ <strong>Designation:</strong> Assign and manage teacher designations.</li>
+                                                            <li>👨‍🏫 <strong>Founder & Head Teacher:</strong> Manage profiles of founders and head teachers.</li>
+                                                            <li>👥 <strong>Teachers, Comm. & Staff:</strong> Manage teacher and staff information.</li>
+                                                            <li>📈 <strong>Academic Info & Result:</strong> Track academic performance and results.</li>
+                                                            <li>🏫 <strong>Facilities & ASR:</strong> Manage school facilities and ASR details.</li>
+                                                            <li>📚 <strong>Mujib Corner & DCCH:</strong> Manage special sections like Mujib Corner and DCCH.</li>
+                                                            <li>📄 <strong>School Summary:</strong> Provide a summary overview of the school's statistics and information.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- Site Setting & Others -->
+                                                    <li>
+                                                        🌐 <strong>Site Setting & Others:</strong>
+                                                        <ul>
+                                                            <li>📸 <strong>Slider:</strong> Manage homepage sliders with images and captions.</li>
+                                                            <li>📖 <strong>About Us:</strong> Update the school's about us section.</li>
+                                                            <li>🎯 <strong>Mission & Vision:</strong> Define and update the school's mission and vision statements.</li>
+                                                            <li>📰 <strong>News:</strong> Publish and manage school news and announcements.</li>
+                                                            <li>🗞️ <strong>Headline:</strong> Manage headline content for the website.</li>
+                                                            <li>📷 <strong>Photo Gallery:</strong> Upload and manage school photo galleries.</li>
+                                                            <li>📹 <strong>Video Gallery:</strong> Upload and manage school video galleries.</li>
+                                                            <li>📞 <strong>Contact:</strong> Manage contact information and forms.</li>
+                                                            <li>🖼️ <strong>Logo & Web Info:</strong> Update the school's logo and other web-related information.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseSix" aria-expanded="false" aria-controls="highSchoolCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseSix" class="collapse" aria-labelledby="highSchoolHeadingSix" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            <strong>Challenge:</strong> One of the primary challenges was designing a scalable and flexible role-based access control (RBAC) system that could accommodate various user roles, such as administrators, teachers, and staff, each with different permissions. Ensuring data security while providing necessary access to users without compromising the system's integrity was critical.
+                                        </p>
+                                        <p>
+                                            <strong>Solution:</strong> To address this, I leveraged Laravel's built-in authorization features along with custom middleware to create a robust RBAC system. This setup allowed for precise definition of roles and permissions, ensuring that each user could only access the functionalities pertinent to their role. Additionally, comprehensive testing was conducted to identify and mitigate potential security vulnerabilities, ensuring the system's reliability and security.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="highSchoolHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#highSchoolCollapseSeven" aria-expanded="false" aria-controls="highSchoolCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="highSchoolCollapseSeven" class="collapse" aria-labelledby="highSchoolHeadingSeven" data-parent="#highSchoolAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Bcbhs School Management System** was successfully deployed, significantly enhancing the school's administrative efficiency and data management capabilities. Administrators can effortlessly manage users and settings, teachers can access and update academic information, and students' data is securely handled. The system's comprehensive features, such as multimedia galleries and detailed reporting, have improved communication within the school community and provided valuable insights for decision-making. Feedback from staff and administrators has been overwhelmingly positive, highlighting the system's user-friendly interface and robust functionality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/high_school/Capture1.PNG" alt="Bcbhs School Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Mrkohinoorenterprise-->
+        <div class="modal fade" id="mrkohinoor" tabindex="-1" role="dialog" aria-labelledby="mrkohinoorModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mrkohinoorModalLabel">Mrkohinoorenterprise</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="mrkohinoorAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseOne" aria-expanded="true" aria-controls="mrkohinoorCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseOne" class="collapse show" aria-labelledby="mrkohinoorHeadingOne" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Mrkohinoorenterprise is a robust e-commerce and administrative management platform designed to streamline various business operations. The system offers comprehensive tools for managing administrative users, general users, product orders, and extensive settings to customize the platform according to business needs. With features like user management, order tracking, product categorization, and content management, the platform ensures efficient workflow and enhanced productivity. Additionally, it includes an intuitive add-to-cart feature to facilitate seamless shopping experiences for clients.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseTwo" aria-expanded="false" aria-controls="mrkohinoorCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseTwo" class="collapse" aria-labelledby="mrkohinoorHeadingTwo" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> on the Mrkohinoorenterprise project, I was responsible for designing and implementing both front-end and back-end functionalities. My duties included developing user-friendly interfaces using <strong>Bootstrap</strong>, building robust server-side logic with <strong>Laravel</strong>, and managing database operations with <strong>MySQL</strong>. Additionally, I integrated essential features such as role-based access control, product management systems, and the add-to-cart functionality to enhance the overall user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseThree" aria-expanded="false" aria-controls="mrkohinoorCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseThree" class="collapse" aria-labelledby="mrkohinoorHeadingThree" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a dedicated team of <strong>5-7 developers</strong> utilizing Agile methodologies to ensure timely and efficient project delivery. My contributions included participating in sprint planning, conducting code reviews, and developing key modules such as user management, order processing, and settings configuration. Effective communication and collaborative problem-solving were pivotal in overcoming development challenges and achieving project milestones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseFour" aria-expanded="false" aria-controls="mrkohinoorCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseFour" class="collapse" aria-labelledby="mrkohinoorHeadingFour" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>UI Libraries:</strong> Font Awesome, Bootstrap Icons</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseFive" aria-expanded="false" aria-controls="mrkohinoorCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseFive" class="collapse" aria-labelledby="mrkohinoorHeadingFive" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Manage Admin -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage Admin:</strong>
+                                                <ul>
+                                                    <li>👥 <strong>Admin User List:</strong> View and manage all administrative users with detailed profiles and permissions.</li>
+                                                    <li>➕ <strong>Create Admin User:</strong> Add new admin users with specific roles and access levels.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Manage User -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Manage User:</strong>
+                                                <ul>
+                                                    <li>👤 <strong>User List:</strong> Access and manage all registered users within the platform.</li>
+                                                    <li>➕ <strong>Create User:</strong> Register new users with designated roles and permissions.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Product Order -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Product Order:</strong>
+                                                <ul>
+                                                    <li>🕒 <strong>Pending List:</strong> Track and manage orders that are awaiting processing.</li>
+                                                    <li>🔄 <strong>Processing List:</strong> Monitor orders currently being processed.</li>
+                                                    <li>✅ <strong>Complete List:</strong> View orders that have been successfully completed.</li>
+                                                    <li>❌ <strong>Cancel List:</strong> Manage and review orders that have been canceled.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Settings -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <strong>Settings:</strong>
+                                                <ul>
+                                                    <!-- Product Setting -->
+                                                    <li>📦 <strong>Product Setting:</strong>
+                                                        <ul>
+                                                            <li>📁 <strong>Product Category:</strong> Define and manage categories for products.</li>
+                                                            <li>🏷️ <strong>Product Brand:</strong> Manage different brands associated with products.</li>
+                                                            <li>🛒 <strong>Products:</strong> Add, edit, and manage product listings.</li>
+                                                            <li>✨ <strong>Special Product:</strong> Highlight and manage special or featured products.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- Site Setting -->
+                                                    <li>🌐 <strong>Site Setting:</strong>
+                                                        <ul>
+                                                            <li>🎞️ <strong>Slider:</strong> Manage homepage sliders for promotional content.</li>
+                                                            <li>🖼️ <strong>PopUp Image:</strong> Configure popup images for announcements or promotions.</li>
+                                                            <li>📞 <strong>Support:</strong> Set up and manage customer support configurations.</li>
+                                                            <li>ℹ️ <strong>About Us:</strong> Update the 'About Us' section with company information.</li>
+                                                            <li>🎯 <strong>Mission Vision:</strong> Define and display the company's mission and vision statements.</li>
+                                                            <li>🔧 <strong>Service Type:</strong> Manage different types of services offered.</li>
+                                                            <li>🛠️ <strong>Our Service:</strong> Detail and manage the services provided by the company.</li>
+                                                            <li>📸 <strong>Photo Gallery:</strong> Upload and manage photo galleries showcasing products or company events.</li>
+                                                            <li>🎥 <strong>Video Gallery:</strong> Integrate and manage video content for enhanced user engagement.</li>
+                                                            <li>👥 <strong>Team Member:</strong> Add and manage profiles of team members.</li>
+                                                            <li>👔 <strong>Director Profile:</strong> Highlight profiles of company directors or key personnel.</li>
+                                                            <li>📇 <strong>Contact:</strong> Manage contact information and communication channels.</li>
+                                                            <li>🖼️ <strong>Logo & Web Title:</strong> Update the platform's logo and web title to reflect brand identity.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- Add to Cart -->
+                                                    <li>🛒 <strong>Add to Cart:</strong> Seamlessly integrate the add-to-cart functionality to enhance the shopping experience for users.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseSix" aria-expanded="false" aria-controls="mrkohinoorCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseSix" class="collapse" aria-labelledby="mrkohinoorHeadingSix" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            <strong>Challenge:</strong> One of the primary challenges was implementing a comprehensive role-based access control system that could efficiently manage multiple administrative levels and user permissions. Ensuring data security while providing flexibility for different user roles required meticulous planning and robust implementation.
+                                        </p>
+                                        <p>
+                                            <strong>Solution:</strong> To address this, I leveraged Laravel's built-in authorization features alongside custom middleware to define and enforce user roles and permissions accurately. This approach ensured that each user had access only to the functionalities pertinent to their role. Additionally, I conducted extensive testing to identify and rectify any potential security vulnerabilities, thereby maintaining the integrity and confidentiality of sensitive data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="mrkohinoorHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#mrkohinoorCollapseSeven" aria-expanded="false" aria-controls="mrkohinoorCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="mrkohinoorCollapseSeven" class="collapse" aria-labelledby="mrkohinoorHeadingSeven" data-parent="#mrkohinoorAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Mrkohinoorenterprise** platform was successfully deployed, significantly enhancing the efficiency of administrative and e-commerce operations. Administrators can effortlessly manage users and products, while general users benefit from a streamlined shopping experience with the integrated add-to-cart feature. The comprehensive settings allow for extensive customization, enabling businesses to tailor the platform to their specific needs. Early feedback highlighted improvements in operational workflow, better user management, and an enhanced shopping experience, leading to increased customer satisfaction and business growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/mrkohinoor/Capture1.PNG" alt="Mrkohinoorenterprise Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Unnayan Sangstha-->
+        <div class="modal fade" id="nedo" tabindex="-1" role="dialog" aria-labelledby="unnayanSangsthaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="unnayanSangsthaModalLabel">Unnayan Sangstha</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="unnayanSangsthaAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseOne" aria-expanded="true" aria-controls="unnayanSangsthaCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseOne" class="collapse show" aria-labelledby="unnayanSangsthaHeadingOne" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Unnayan Sangstha is a dynamic organization focused on empowering communities through various developmental programs. The platform is designed to manage administrative tasks, settings, employee details, programs, microfinance, galleries, projects, and more. It provides a centralized system for administrators to oversee all aspects of the organization, ensuring efficient operations and effective service delivery.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseTwo" aria-expanded="false" aria-controls="unnayanSangsthaCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseTwo" class="collapse" aria-labelledby="unnayanSangsthaHeadingTwo" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> on the Unnayan Sangstha project, I was responsible for both front-end and back-end development. My tasks included designing intuitive user interfaces using <strong>Bootstrap</strong>, implementing robust server-side logic with <strong>Laravel</strong>, and managing database interactions using <strong>MySQL</strong>. Additionally, I integrated various modules such as admin management, settings configuration, employee management, and gallery features to ensure a comprehensive and user-friendly platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseThree" aria-expanded="false" aria-controls="unnayanSangsthaCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseThree" class="collapse" aria-labelledby="unnayanSangsthaHeadingThree" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a dedicated team of <strong>5-7 developers</strong> following Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing key modules such as admin management, settings, and employee programs. Regular stand-up meetings and collaborative tools facilitated effective communication and timely delivery of project milestones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseFour" aria-expanded="false" aria-controls="unnayanSangsthaCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseFour" class="collapse" aria-labelledby="unnayanSangsthaHeadingFour" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Authentication:</strong> Laravel Passport, Role-based access control</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>UI Libraries:</strong> Font Awesome, Bootstrap Icons, Owl Carousel, Lightbox, Animate.css</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseFive" aria-expanded="false" aria-controls="unnayanSangsthaCollapseFive">
+                                            Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseFive" class="collapse" aria-labelledby="unnayanSangsthaHeadingFive" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <!-- Manage Admin -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                👤 <strong>Manage Admin:</strong> Comprehensive tools for managing administrative users, including listing and creating admin users.
+                                            </li>
+                                            <!-- Settings -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                ⚙️ <strong>Settings:</strong>
+                                                <ul class="list-unstyled ml-4">
+                                                    <li>📄 <strong>About Us Setting:</strong> Configure the organization's About Us information.</li>
+                                                    <li>📈 <strong>Evolution:</strong> Track the organization's growth and milestones.</li>
+                                                    <li>🔍 <strong>At a Glance:</strong> Provide a quick overview of key statistics and information.</li>
+                                                    <li>🎯 <strong>Mission & Vision:</strong> Define and display the organization's mission and vision statements.</li>
+                                                    <li>👨‍💼 <strong>Executive Director:</strong> Manage details of the Executive Director.</li>
+                                                    <li>🤝 <strong>Partners:</strong> Manage and showcase organizational partners.</li>
+                                                    <li>📋 <strong>Designation:</strong> Define and manage employee designations.</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Employee -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                👥 <strong>Employee:</strong>
+                                                <ul class="list-unstyled ml-4">
+                                                    <li>📚 <strong>Programs and Publications:</strong> Manage organizational programs and publications.</li>
+                                                    <li>💰 <strong>Microfinance and AL:</strong> Handle microfinance operations and asset-liability management.</li>
+                                                    <li>💳 <strong>Loan Information:</strong> Manage loan details and client information.</li>
+                                                    <li>📑 <strong>ANRLS:</strong> Administer ANRLS (specific functionality as per organizational needs).</li>
+                                                </ul>
+                                            </li>
+                                            <!-- Galleries -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                📸 <strong>Photo Gallery:</strong> Upload and manage organizational photos.</li>
+                                                <li class="list-group-item bg-secondary text-white">
+                                                🎥 <strong>Video Gallery:</strong> Upload and manage organizational videos.
+                                            </li>
+                                            <!-- Project -->
+                                            <li class="list-group-item bg-secondary text-white">
+                                                🛠️ <strong>Project:</strong>
+                                                <ul class="list-unstyled ml-4">
+                                                    <li>📞 <strong>Contact Us Setting:</strong> Configure the Contact Us information for projects.</li>
+                                                    <li>🔄 <strong>Slider:</strong> Manage image sliders for dynamic content display.</li>
+                                                    <li>✍️ <strong>Blogs:</strong> Create and manage blog posts.</li>
+                                                    <li>🏢 <strong>Branch Name:</strong> Manage branch information and details.</li>
+                                                    <li>📍 <strong>Contact Info:</strong> Update and manage contact information across branches.</li>
+                                                    <li>💼 <strong>Job:</strong> Post and manage job openings.</li>
+                                                    <li>📄 <strong>Applied Job:</strong> Track and manage job applications.</li>
+                                                    <li👥 <strong>Client Contact:</strong> Manage client contact information and interactions.</li>
+                                                    <li>🖼️ <strong>Logo & Web Info:</strong> Update the platform's logo and web-related information to reflect the organization's branding.
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseSix" aria-expanded="false" aria-controls="unnayanSangsthaCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseSix" class="collapse" aria-labelledby="unnayanSangsthaHeadingSix" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <h6>Challenge:</h6>
+                                        <p>
+                                            One of the main challenges was integrating the extensive settings module, which includes multiple sub-sections such as About Us, Mission & Vision, and Executive Director details. Ensuring that each setting was user-friendly and seamlessly integrated with other modules required meticulous planning and execution.
+                                        </p>
+                                        <h6>Solution:</h6>
+                                        <p>
+                                            To address this, I implemented a modular architecture using Laravel's MVC framework, allowing each setting section to be developed and maintained independently. I utilized Laravel's Blade templating engine to create reusable components, ensuring consistency across different settings. Additionally, I conducted user testing sessions to gather feedback and iteratively improve the user interface, making it more intuitive and efficient for administrators to manage various settings.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="unnayanSangsthaHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#unnayanSangsthaCollapseSeven" aria-expanded="false" aria-controls="unnayanSangsthaCollapseSeven">
+                                            Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="unnayanSangsthaCollapseSeven" class="collapse" aria-labelledby="unnayanSangsthaHeadingSeven" data-parent="#unnayanSangsthaAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The **Unnayan Sangstha** platform was successfully deployed, providing a robust solution for managing the organization's administrative and operational tasks. Administrators can efficiently manage settings, employee details, programs, and galleries, while employees can access and contribute to various programs and projects. The system's intuitive interface and comprehensive feature set have significantly enhanced operational efficiency, improved data management, and facilitated better communication within the organization. Feedback from stakeholders has been overwhelmingly positive, highlighting the platform's effectiveness in streamlining workflows and supporting the organization's mission.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/nedo/Capture1.PNG" alt="Unnayan Sangstha Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal HDPSBD -->
+        <div class="modal fade" id="hdpsbd" tabindex="-1" role="dialog" aria-labelledby="hdpsbdModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hdpsbdModalLabel">Human Development For Poor Society (HDPSBD)</h5>
+                        <button type="button" class="close bg-secondary" data-dismiss="modal" aria-label="Close">
+                            <span class="text-light" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="hdpsbdAccordion">
+                            <!-- Overview -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingOne">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseOne" aria-expanded="true" aria-controls="hdpsbdCollapseOne">
+                                            Overview
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseOne" class="collapse show" aria-labelledby="hdpsbdHeadingOne" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The HDPSBD platform is an integrated management system designed to uplift poor communities by facilitating various programs and services. It includes features for managing user roles, online payments, project tracking, and donation management, ensuring effective service delivery and community engagement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- My Role -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingTwo">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseTwo" aria-expanded="false" aria-controls="hdpsbdCollapseTwo">
+                                            My Role
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseTwo" class="collapse" aria-labelledby="hdpsbdHeadingTwo" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            As a <strong>Full Stack Developer</strong> for the HDPSBD project, I was responsible for both front-end and back-end development. My tasks included designing user interfaces using <strong>Bootstrap</strong>, implementing server-side logic with <strong>Laravel</strong>, and managing databases with <strong>MySQL</strong>. I also worked on integrating payment systems and role-based access features.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Contribution -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingThree">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseThree" aria-expanded="false" aria-controls="hdpsbdCollapseThree">
+                                            Team Contribution
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseThree" class="collapse" aria-labelledby="hdpsbdHeadingThree" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            Collaborated with a team of <strong>5 developers</strong> using Agile methodologies. My contributions included participating in sprint planning, conducting code reviews, and developing core features like user management, project tracking, and donation processing. Regular stand-up meetings facilitated effective communication and project progress tracking.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Technologies Used -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingFour">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseFour" aria-expanded="false" aria-controls="hdpsbdCollapseFour">
+                                            Technologies Used
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseFour" class="collapse" aria-labelledby="hdpsbdHeadingFour" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>Backend:</strong> Laravel, MySQL</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Frontend:</strong> Bootstrap, HTML5, CSS3, JavaScript, jQuery</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>APIs:</strong> RESTful APIs for third-party integrations</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Version Control:</strong> Git</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Payment Gateway:</strong> SSL Commerz</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Key Features -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingFive">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseFive" aria-expanded="false" aria-controls="hdpsbdCollapseFive">
+                                        Key Features
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseFive" class="collapse" aria-labelledby="hdpsbdHeadingFive" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary text-white"><strong>User Management:</strong> Manage admin and user roles with specific permissions.</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Online Payment:</strong> Secure payment processing through SSL Commerz.</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Project Tracking:</strong> Tools for monitoring ongoing projects and their statuses.</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Donation Management:</strong> Facilitate donations through various channels and manage donor information.</li>
+                                            <li class="list-group-item bg-secondary text-white"><strong>Multi-language Support:</strong> Bilingual support in Bangla and English for user accessibility.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Challenges & Solutions -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingSix">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseSix" aria-expanded="false" aria-controls="hdpsbdCollapseSix">
+                                            Challenges & Solutions
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseSix" class="collapse" aria-labelledby="hdpsbdHeadingSix" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            <strong>Challenge:</strong> One of the main challenges was ensuring data security and user adaptation to the new system, particularly in managing sensitive donor information and project details.
+                                        </p>
+                                        <p>
+                                            <strong>Solution:</strong> We implemented encryption for data security and conducted user training sessions to familiarize stakeholders with the platform, enhancing user engagement and confidence in using the system.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="card mb-2">
+                                <div class="card-header bg-primary" id="hdpsbdHeadingSeven">
+                                    <h6 class="mb-0">
+                                        <button class="btn btn-link text-left text-white collapsed w-100" type="button" data-toggle="collapse" data-target="#hdpsbdCollapseSeven" aria-expanded="false" aria-controls="hdpsbdCollapseSeven">
+                                        Outcome
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="hdpsbdCollapseSeven" class="collapse" aria-labelledby="hdpsbdHeadingSeven" data-parent="#hdpsbdAccordion">
+                                    <div class="card-body bg-secondary text-white">
+                                        <p>
+                                            The HDPSBD platform has effectively enhanced operational efficiency and service delivery. With robust user management and payment systems, it supports the organization's mission to uplift poor communities. The responsive design and bilingual support have improved accessibility and engagement with stakeholders.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Image -->
+                        <div class="text-center mt-4">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/hdpsbd/Capture1.PNG" alt="HDPSBD Project">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
 
     <!-- Back to Top -->
     <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
